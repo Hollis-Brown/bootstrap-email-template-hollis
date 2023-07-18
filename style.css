@@ -1,0 +1,12 @@
+#sidebar-nav {
+    width: 160px;
+}
+
+@media (max-width: 616px) {
+  .col-md-5,
+  .col-md-7 {
+      width: 100%;
+  }
+}
+
+

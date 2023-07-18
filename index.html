@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Bootstrap Email Template Project</title>
+</head>
+<body>
+    
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+
+        <!-- Sidebar section -->
+        <div class="col-auto px-0">
+            <div id="sidebar" class="collapse collapse-horizontal show border-end border border-5">
+                <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100" style="margin-top: 75px;">
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-inbox"></i> <span>Inbox</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-star"></i> <span> Starred</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-clock"></i> <span>Snoozed</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-exclamation-circle"></i> <span>Important</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-check-circle"></i> <span>Sent</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-file-earmark"></i> <span>Drafts</span></a>
+                    <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-trash"></i> <span>Trash</span></a>
+                    <!-- Compose Button -->
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#composeModal">
+                        Compose
+                    </button>
+                    <div class="modal fade" id="composeModal" tabindex="-1" aria-labelledby="composeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="composeModalLabel">Compose Email</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient" class="form-label">Recipient</label>
+                                            <input type="email" class="form-control" id="recipient" placeholder="Enter recipient email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="subject" class="form-label">Subject</label>
+                                            <input type="text" class="form-control" id="subject" placeholder="Enter email subject">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea class="form-control" id="message" rows="5" placeholder="Enter email message"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline-primary">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main section -->
+        <main class="col ps-md-2 pt-2">
+            <!-- Sidebar end -->
+
+            <!-- Navbar section -->
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list bi-lg py-2 p-1"></i> Menu</a>
+                <nav class="navbar navbar-light-emphasis">
+                    <div class="container-fluid myclass">
+                        <form class="d-flex">
+                            <input class="form-control me-2 border border-5" type="search" aria-label="Search">
+                            <button class="btn btn-outline-primary border border-5" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar end -->
+
+            <div class="row">
+
+                <!-- Emails section -->
+                <div class="col-md-5 col-sm-5 col-12 text-bg-white">
+                    <!-- Table code retrieved from https://getbootstrap.com/docs/5.3/content/tables/#overview -->
+                    <table class="table table-white table-striped table-hover border border-5">
+                        <tbody>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td>Urgent Message</td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
+                                <td>Mrs. Property Owner</td>
+                                <td></td>
+                                <td>6:58 PM</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    <!-- Pagination section-->
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><</span>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <!-- Pagination end -->
+                </div>
+                <!-- Emails section end -->
+
+                <!-- Email content section -->
+                <div class="col-md-7 col-sm-7 col-12">
+                    <div class="card border border-5">
+                        <div class="card-body">
+                              <h5 class="card-title">Email Subject: Urgent Message</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">From: property.management@email.com</h6>
+                              <hr>
+                              <p>
+                                  Hello Hollis,
+                                  <br>
+                                  <br>
+                                  This is the building owner contacting you to let you know that I'm highly 
+                                  satisfied with you for being awesome. As you know, my late husband was a millionaire and this allows me to be generous. Just for being awesome I'm going to give you this apartment rent free. but as you know, the city is crime is getting worse so all I ask from you in return is to keep out the riff-raff for me deary. 
+                                  <br>
+                                  <br>
+                                  Sincerely,
+                                  <br>
+                                  Mrs. Property Owner
+                              </p>
+                                  <form action="/action_page.php">
+                                    <div class="mb-3 mt-3">
+                                      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                    </div>
+                                    <button class="btn btn-outline-primary border border-5" type="submit">Reply</button>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Email content section end -->
+
+            </div>
+        </main>
+        <!-- Main section end -->
+    </div>
+</div>
+  
+
+
+  <!-- Popper.js first, then Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
+
