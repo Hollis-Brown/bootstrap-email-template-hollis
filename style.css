@@ -13,3 +13,8 @@ ul li:hover {
   box-shadow: 10px 10px 10px gray;
   transform: scale(1.05);
 }
+
+form {
+  resize: none;
+}
+

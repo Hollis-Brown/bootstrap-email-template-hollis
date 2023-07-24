@@ -13,29 +13,32 @@
     <title>Hollis's Bootstrap Email Template Project</title>
 </head>
 <body>
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <div class="row">
 
-            <!--navbar start -->
-            <nav class="col-lg-2 flex-column navbar navbar-expand-lg ">
-                <div class="container ">    
+            <!--sidenav bar start -->
+            <nav class="col-lg-2 flex-column navbar navbar-expand-lg text-primary">
+                <div class="container">    
                     <div>
-                        <h1 class="p-2 my-2 mt-4">Hollis Mail</h1> 
+                        <!-- sidenav bar header -->
+                        
+                        <img width="150" height="120" src="https://img.icons8.com/3d-fluency/94/mail.png" alt="mail"/>
+                        
                     </div>
 
                     <div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navmenu">
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"data-bs-target="#navmenu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>    
                 </div>
 
-                <div class="container ">
-                    <ul class="collapse navbar-collapse flex-column align-items-start ms-4 navbar-nav " id="navmenu">
+                <div class="container">
+                    <ul class="collapse navbar-collapse flex-column ms-4 navbar-nav fs-5" id="navmenu">
                         <li class=" my-4">
 
-                         <!-- DEBUGGING FOR COMPOSE BTN AND MODAL START -->
-                                <button type="button" class="btn btn-outline-primary border border-5" data-bs-toggle="modal" data-bs-target="#composeModal">+ Compose</button>
+                                <!-- compose button -->
+                                <button type="button" class="btn btn-outline-primary border border-primary-subtle border-5" data-bs-toggle="modal" data-bs-target="#composeModal">+ Compose</button>
 
                                 <!-- Send email modal start -->
                                 <div class="modal fade" id="composeModal" tabindex="-1" aria-labelledby="composeModalLabel" aria-hidden="true">
@@ -69,134 +72,134 @@
                                     </div>
                                 </div>
                                 <!-- Send email modal end -->
-                          <!-- DEBUGGIN FOR COMPOSE BTN AND MODAL END -->  
+                   
                          
 
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link active"><i class="bi bi-inbox"></i> Inbox</a>
+                            <a href="#" class="nav-link active text-primary"><i class="bi bi-inbox"></i> Inbox</a>
                         </li>
                         <li class="nav-item">
-                         <a href="#" class="nav-link"><i class="bi bi-star"></i> Starred</a>
+                         <a href="#" class="nav-link text-primary"><i class="bi bi-star"></i> Starred</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="bi bi-check-circle"></i> Sent</a>
+                            <a href="#" class="nav-link text-primary"><i class="bi bi-check-circle"></i> Sent</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="bi bi-file-earmark"></i> Draft</a>
+                            <a href="#" class="nav-link text-primary"><i class="bi bi-file-earmark"></i> Draft</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="bi bi-trash"></i> Trash</a>
+                            <a href="#" class="nav-link text-primary"><i class="bi bi-trash"></i> Trash</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <!-- navbar-end -->
+            <!-- sidenav-bar-end -->
 
             <!-- email-start -->
-            <section class="col-lg-4 ">
+            <section class="col-lg-4 col-md-6">
             
                 <div class="container my-3 ">
-                    <div class="input-group mt-5">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <button class="search bg-light outline border border-5" type="button">
+                    <div class="input-group mt-5 ">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search">
+                        <button class="search bg-light outline border border-5 border-primary-subtle" type="button">
                             <ion-icon name="search-outline"></ion-icon>
                         </button>
                     </div>
                 </div>
                 <div class="container my-2">
-                    <table class="table table-white table-striped table-hover">
+                    <table class="table table-hover border border-primary-subtle border-5">
                         <tbody>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
-                                <td>Urgent Message</td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
+                                <td class="text-primary">Urgent Message</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
 
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                             <tr>
                                 <th scope="row"><input class="form-check-input mt-1.5 border-2" type="checkbox" value="" aria-label="Checkbox for following text input"> </th>
-                                <td>Mrs. Property Owner</td>
+                                <td class="text-primary">Mrs. Property Owner</td>
                                 <td></td>
-                                <td>6:58 PM</td>
+                                <td class="text-primary">6:58 PM</td>
                             </tr>
                      
                         </tbody>
@@ -221,32 +224,31 @@
             <!-- email-end -->
 
             <!-- email-content start -->
-            <section class="col-lg-6  mt-5" id="content">
+            <section class="col-lg-6 col-md-6 mt-5 text-primary" id="content">
 
-                <div >
-                    <div >
-                          <h5 >Email Subject: Urgent Message</h5>
-                          <h6 >From: property.management@email.com</h6>
-                          <hr>
-                          <p>
-                              Hello Hollis,
-                              <br>
-                              <br>
-                              This is the building owner contacting you to let you know that I'm highly 
-                              satisfied with you for being awesome. As you know, my late husband was a millionaire and this allows me to be generous. Just for being awesome I'm going to give you this apartment rent free. but as you know, the city is crime is getting worse so all I ask from you in return is to keep out the riff-raff for me deary. 
-                              <br>
-                              <br>
-                              Sincerely,
-                              <br>
-                              Mrs. Property Owner
-                          </p>
-                              <form action="/action_page.php">
-                                <div class="mb-3 mt-3">
-                                  <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-                                </div>
-                                <button class="btn btn-outline-primary border border-5" type="submit">Reply</button>
-                              </form>
-                        </div>
+                <div class="container">
+                    <h5 >Email Subject: Urgent Message</h5>
+                    <h6 >From: property.management@email.com</h6>
+                    <hr class="border border-primary border-3 ">
+                    <p>
+                        Hello Hollis,
+                        <br>
+                        <br>
+                        This is the building owner contacting you to let you know that I'm highly 
+                        satisfied with you for being awesome. As you know, my late husband was a millionaire and this allows me to be generous. Just for being awesome I'm going to give you this apartment rent free. but as you know, the city is crime is getting worse so all I ask from you in return is to keep out the riff-raff for me deary. 
+                        <br>
+                        <br>
+                        Sincerely,
+                        <br>
+                        Mrs. Property Owner
+                    </p>
+                        <form action="/action_page.php">
+                          <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" style="height:300px"></textarea>
+                          </div>
+                          <button class="btn btn-outline-primary border border-primary-subtle border-5" type="submit" onclick="return false">Reply</button>
+                        </form>
+                </div>
                     </div>
             </section>
             <!-- email content end -->  
